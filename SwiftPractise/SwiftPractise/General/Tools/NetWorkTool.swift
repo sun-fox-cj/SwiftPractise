@@ -46,10 +46,10 @@ class NetWorkTool {
                 
             case .Success:
                 print(response)
-//                delegate?.success(operation: NSOperation(), ressult: response as [String : AnyObject])
+                self.delegate?.success(task: NSURLSessionTask(), ressult: ["res" : "res"])
             case .Failure:
                 print(response)
-//                self.delegate?.failed(operation: NSOperation(), error: NSError())
+                self.delegate?.failed(task: NSURLSessionTask(), error: response.result.error!)
             }
         }).task
         

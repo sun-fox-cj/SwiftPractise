@@ -8,20 +8,48 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, NetWorkDelegate {
 
+    var tasks: [NSURLSessionTask] = [NSURLSessionTask]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let network = NetWorkTool(baseUrlStr: "http://dohko.api.new.chouti.com/")
-        network.requestGet(requestUrl: "attente/flow.json?access_token=c40fe2f61bcfd611177be71ec305196bAC6FECEC6D2B58B07DB2CC7F164A434F&count=25&since_time=1446608825159000", parameters: nil)
+        let network = NetWorkTool(baseUrlStr: nil)
+        network.delegate = self
         
+        let task = network.requestGet(requestUrl: "https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_7.2_beta_3/Xcode_7.2_beta_3.dmg", parameters: nil)
         
-        
+        tasks.append(task)
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        for t in tasks {
+            
+            t.cancel()
+        }
+    }
+    
+    
+    func success(task task: NSURLSessionTask, ressult: [String : Any]) {
+        print("123")
+        // 此处应该得到task 并从tasks移除
+    }
+    
+    func failed(task task: NSURLSessionTask, error: NSError) {
+        print("456")
+        // 此处应该得到task 并从tasks移除
+    }
+    
+    
+    deinit {
+    
+        print("deinit")
+    }
+    
     /*
     // MARK: - Navigation
 

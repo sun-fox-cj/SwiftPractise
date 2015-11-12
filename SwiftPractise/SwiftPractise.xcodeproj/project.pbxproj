@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2A35A6C71BF3266D00E29583 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2A35A6C61BF3266D00E29583 /* Podfile */; };
+		2AB36E251BF44A6C00073A9D /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB36E241BF44A6C00073A9D /* NetWorkTool.swift */; };
+		2AB36E271BF4548500073A9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB36E261BF4548500073A9D /* MainViewController.swift */; };
+		2AB36E291BF454B300073A9D /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB36E281BF454B300073A9D /* MainViewController.storyboard */; };
 		2AD1653A1BF31CA1003B8BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD165391BF31CA1003B8BAE /* AppDelegate.swift */; };
-		2AD1653F1BF31CA1003B8BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1653D1BF31CA1003B8BAE /* Main.storyboard */; };
 		2AD165411BF31CA1003B8BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD165401BF31CA1003B8BAE /* Assets.xcassets */; };
 		2AD165441BF31CA1003B8BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD165421BF31CA1003B8BAE /* LaunchScreen.storyboard */; };
 		2AD1654F1BF31CA1003B8BAE /* SwiftPractiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1654E1BF31CA1003B8BAE /* SwiftPractiseTests.swift */; };
@@ -38,9 +40,11 @@
 /* Begin PBXFileReference section */
 		00A44E8AD2CBA9C18D395F81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2A35A6C61BF3266D00E29583 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2AB36E241BF44A6C00073A9D /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		2AB36E261BF4548500073A9D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2AB36E281BF454B300073A9D /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		2AD165361BF31CA1003B8BAE /* SwiftPractise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD165391BF31CA1003B8BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AD1653E1BF31CA1003B8BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AD165401BF31CA1003B8BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD165431BF31CA1003B8BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AD165451BF31CA1003B8BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 		2AB36E201BF4496B00073A9D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2AB36E261BF4548500073A9D /* MainViewController.swift */,
+				2AB36E281BF454B300073A9D /* MainViewController.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 		2AB36E231BF4497200073A9D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2AB36E241BF44A6C00073A9D /* NetWorkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -149,7 +156,6 @@
 				2AB36E211BF4497200073A9D /* General */,
 				2AB36E1F1BF4496B00073A9D /* Sections */,
 				2AD165391BF31CA1003B8BAE /* AppDelegate.swift */,
-				2AD1653D1BF31CA1003B8BAE /* Main.storyboard */,
 				2AD165401BF31CA1003B8BAE /* Assets.xcassets */,
 				2AD165421BF31CA1003B8BAE /* LaunchScreen.storyboard */,
 				2AD165451BF31CA1003B8BAE /* Info.plist */,
@@ -300,10 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB36E291BF454B300073A9D /* MainViewController.storyboard in Resources */,
 				2AD165441BF31CA1003B8BAE /* LaunchScreen.storyboard in Resources */,
 				2AD165411BF31CA1003B8BAE /* Assets.xcassets in Resources */,
 				2A35A6C71BF3266D00E29583 /* Podfile in Resources */,
-				2AD1653F1BF31CA1003B8BAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB36E271BF4548500073A9D /* MainViewController.swift in Sources */,
+				2AB36E251BF44A6C00073A9D /* NetWorkTool.swift in Sources */,
 				2AD1653A1BF31CA1003B8BAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,14 +420,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2AD1653D1BF31CA1003B8BAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2AD1653E1BF31CA1003B8BAE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2AD165421BF31CA1003B8BAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

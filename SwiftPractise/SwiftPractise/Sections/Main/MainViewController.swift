@@ -36,12 +36,12 @@ class MainViewController: UIViewController, NetWorkDelegate {
     
     func success(task task: NSURLSessionTask, ressult: [String : Any]) {
         print("123")
-        // 此处应该得到task 并从tasks移除
+        // TODO: 此处应该得到task 并从tasks移除
     }
     
     func failed(task task: NSURLSessionTask, error: NSError) {
         print("456")
-        // 此处应该得到task 并从tasks移除
+        // TODO: 此处应该得到task 并从tasks移除
     }
     
     

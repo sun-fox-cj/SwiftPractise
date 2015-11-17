@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (3.1.2)
+  - Moya (4.5.0):
+    - Moya/Core (= 4.5.0)
+  - Moya/Core (4.5.0):
+    - Alamofire (~> 3.0)
+  - SQLite.swift (1.0.0)
+  - XCGLogger (3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Moya
+  - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`)
+  - XCGLogger
+
+EXTERNAL SOURCES:
+  SQLite.swift:
+    :git: https://github.com/stephencelis/SQLite.swift.git
+
+CHECKOUT OPTIONS:
+  SQLite.swift:
+    :commit: c9d3082d1f5ddc2e55a792a8eb1a677b8a1b15f5
+    :git: https://github.com/stephencelis/SQLite.swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  Moya: 82813e5bf27564535cd9cdf4e9db61fd220f7f8e
+  SQLite.swift: 3bb75f5a650f08673276bc6d3fb1de1b542b8f4d
+  XCGLogger: 5802533aff8bafc8b3b9776ab8972576f31d0a4e
+
+COCOAPODS: 0.39.0
